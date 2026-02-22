@@ -17,6 +17,7 @@
 </head>
 <body>
 <script>if(sessionStorage.getItem('nova_auth')!=='1'){window.location.href='login.html';}</script>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Navigation -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -64,7 +65,7 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero" style="min-height:60vh;display:flex;align-items:center">
+<section id="main" class="hero" style="min-height:60vh;display:flex;align-items:center">
 <div class="hero-grid"></div>
 <div class="hero-glow"></div>
 <div class="container" style="position:relative;z-index:1">
@@ -89,8 +90,8 @@
 <p style="margin:12px auto 0;max-width:650px">Three macro forces are creating a once-in-a-generation opening for a semiconductor-based diagnostics platform.</p>
 </div>
 <div class="grid-3 fo fo-d1">
-<div class="card card-dark" style="border-top:3px solid #EF4444">
-<div style="font-family:var(--fm);font-size:2.5rem;font-weight:700;color:#EF4444;margin-bottom:8px">1.27M</div>
+<div class="card card-dark" style="border-top:3px solid var(--r)">
+<div style="font-family:var(--fm);font-size:2.5rem;font-weight:700;color:var(--r);margin-bottom:8px">1.27M</div>
 <h4 style="margin-bottom:12px">AMR Crisis</h4>
 <p style="font-size:.85rem">Deaths annually from antimicrobial resistance (WHO/Lancet 2019 Global Burden Study). $24B US hospital cost. 7.6% mortality increase per hour of delayed treatment (Kumar et al., <em>Crit Care Med</em> 2006).</p>
 <p style="font-size:.8rem;margin-top:8px;color:var(--gold)">Current culture-based testing: 2&ndash;7 days. Novascope: &lt;60 minutes from whole blood.</p>
@@ -239,7 +240,7 @@ Key person risk <svg viewBox="0 0 18 18"><path d="M5 7l4 4 4-4"/></svg>
 <p style="font-size:.85rem;margin-top:8px">Still running on 40-year-old optics physics. PCR, ELISA, sequencing &mdash; all require expensive optical components.</p>
 </div>
 <div class="card" style="text-align:center">
-<div style="font-family:var(--fm);font-size:2.5rem;font-weight:700;color:#EF4444">$<span class="count" data-count="25" data-suffix="B+">0</span></div>
+<div style="font-family:var(--fm);font-size:2.5rem;font-weight:700;color:var(--r)">$<span class="count" data-count="25" data-suffix="B+">0</span></div>
 <h4 style="margin-top:8px">Blood Culture Market</h4>
 <p style="font-size:.85rem;margin-top:8px">Sepsis, bacteremia, antimicrobial resistance testing. BioFire generated &euro;1,494M in 2024 revenue alone.</p>
 </div>

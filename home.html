@@ -17,6 +17,7 @@
 </head>
 <body>
 <script>if(sessionStorage.getItem('nova_auth')!=='1'){window.location.href='login.html';}</script>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Navigation — 5+1 pattern with dropdowns -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -66,7 +67,7 @@
 </nav>
 
 <!-- ① Hero — dual-color gradient -->
-<section class="hero hero--dual" style="min-height:100vh;display:flex;align-items:center">
+<section id="main" class="hero hero--dual" style="min-height:100vh;display:flex;align-items:center">
 <div class="hero-grid"></div>
 <div class="hero-glow"></div>
 <div class="container" style="position:relative;z-index:1">

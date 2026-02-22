@@ -17,6 +17,7 @@
 </head>
 <body>
 <script>if(sessionStorage.getItem('nova_auth')!=='1'){window.location.href='login.html';}</script>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Navigation — 5+1 pattern with dropdowns -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -64,7 +65,7 @@
 </nav>
 
 <!-- Hero — 98% Accuracy Impact Stat -->
-<section class="hero">
+<section id="main" class="hero">
 <div class="hero-grid"></div>
 <div class="hero-glow"></div>
 <div class="container" style="position:relative;z-index:1">
@@ -172,11 +173,11 @@
 <!-- Key stats -->
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px">
 <div class="card card-dark" style="padding:16px;text-align:center">
-<div style="font-family:var(--fm);font-size:1.5rem;font-weight:700;color:#EF4444">10&sup2;</div>
+<div style="font-family:var(--fm);font-size:1.5rem;font-weight:700;color:var(--r)">10&sup2;</div>
 <div style="font-size:.7rem;color:rgba(255,255,255,.5)">cfu/mL LOD</div>
 </div>
 <div class="card card-dark" style="padding:16px;text-align:center">
-<div style="font-family:var(--fm);font-size:1.5rem;font-weight:700;color:#EF4444">1,000&times;</div>
+<div style="font-family:var(--fm);font-size:1.5rem;font-weight:700;color:var(--r)">1,000&times;</div>
 <div style="font-size:.7rem;color:rgba(255,255,255,.5)">vs BioFire sensitivity</div>
 </div>
 </div>
