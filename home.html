@@ -6,215 +6,73 @@
 <title>Home | Novascope BioChips</title>
 <meta name="description" content="Novascope BioChips — The BioSemiconductor Company. Where Silicon Meets Biology. Powering next-generation diagnostics for sepsis and Alzheimer's disease.">
 <meta property="og:title" content="Home | Novascope BioChips">
-<meta property="og:description" content="Novascope BioChips — The BioSemiconductor Company. Where Silicon Meets Biology. Powering next-generation diagnostics for sepsis and Alzheimer's disease.">
+<meta property="og:description" content="Novascope BioChips — The BioSemiconductor Company. Where Silicon Meets Biology.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Novascope BioChips">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--t:#0D9488;--t2:#0B7C73;--t3:#14B8A6;--gold:#C8A44E;--gold2:#D4B65E;--d1:#0F1923;--d2:#1A2836;--d3:#243447;--bg:#FAFBFC;--bg2:#F1F5F9;--txt:#1E293B;--txt2:#475569;--txt3:#94A3B8;--w:#FFFFFF;--r:#EF4444;--g:#22C55E;--fd:'Playfair Display',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif;--fm:'DM Mono',monospace;--e:cubic-bezier(.4,0,.2,1);--sh:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);--sh2:0 4px 6px rgba(0,0,0,.07),0 2px 4px rgba(0,0,0,.06);--sh3:0 10px 15px rgba(0,0,0,.1),0 4px 6px rgba(0,0,0,.05);--sh4:0 20px 25px rgba(0,0,0,.1),0 10px 10px rgba(0,0,0,.04);--r1:8px;--r2:12px;--r3:16px;--r4:24px}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
-body{font-family:var(--fb);color:var(--txt);background:var(--bg);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--t);text-decoration:none;transition:color .2s var(--e)}
-a:hover{color:var(--t2)}
-h1,h2,h3,h4,h5,h6{font-family:var(--fd);font-weight:700;line-height:1.2;color:var(--d1)}
-h1{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-0.02em}
-h2{font-size:clamp(1.75rem,4vw,2.75rem);letter-spacing:-0.01em}
-h3{font-size:clamp(1.25rem,2.5vw,1.75rem)}
-h4{font-size:clamp(1.1rem,2vw,1.35rem)}
-p{margin-bottom:1rem;color:var(--txt2)}
-.mono{font-family:var(--fm)}
-.accent{color:var(--t)}
-.gold{color:var(--gold)}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-.container-lg{max-width:1400px;margin:0 auto;padding:0 24px}
-
-/* Navigation */
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,25,35,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);transition:all .3s var(--e)}
-.nav-inner{max-width:1400px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
-.nav-logo{height:36px;width:auto}
-.nav-links{display:flex;gap:4px;align-items:center}
-.nav-link{color:rgba(255,255,255,.7);font-size:.875rem;font-weight:500;padding:8px 14px;border-radius:var(--r1);transition:all .2s var(--e);white-space:nowrap;font-family:var(--fb)}
-.nav-link:hover,.nav-link.active{color:var(--w);background:rgba(255,255,255,.08)}
-.nav-link.active{color:var(--t3)}
-.nav-cta{background:var(--t)!important;color:var(--w)!important;font-weight:600;padding:8px 20px!important;border-radius:var(--r4)!important}
-.nav-cta:hover{background:var(--t2)!important;transform:translateY(-1px)}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
-.hamburger span{display:block;width:22px;height:2px;background:var(--w);border-radius:2px;transition:all .3s var(--e)}
-.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(15,25,35,.98);backdrop-filter:blur(12px);padding:16px 24px 24px;border-bottom:1px solid rgba(255,255,255,.06)}
-.mobile-menu.open{display:block}
-.mobile-menu .nav-link{display:block;padding:12px 16px;font-size:1rem}
-
-/* Hero sections */
-.hero{position:relative;padding:160px 0 100px;overflow:hidden;background:linear-gradient(135deg,var(--d1) 0%,var(--d2) 50%,var(--d3) 100%)}
-.hero-grid{position:absolute;inset:0;background-image:radial-gradient(rgba(13,148,136,.12) 1px,transparent 1px);background-size:32px 32px;opacity:.6}
-.hero-glow{position:absolute;top:-30%;right:-20%;width:60%;height:120%;background:radial-gradient(ellipse,rgba(13,148,136,.08) 0%,transparent 70%);pointer-events:none}
-.hero h1{color:var(--w);margin-bottom:16px}
-.hero p{color:rgba(255,255,255,.7);font-size:1.125rem;max-width:640px}
-.hero .label{display:inline-block;font-family:var(--fm);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--t3);margin-bottom:16px;padding:6px 16px;background:rgba(13,148,136,.1);border:1px solid rgba(13,148,136,.2);border-radius:var(--r4)}
-
-/* Sections */
-.section{padding:100px 0}
-.section-dark{background:linear-gradient(180deg,var(--d1),var(--d2));color:var(--w)}
-.section-dark h2,.section-dark h3,.section-dark h4{color:var(--w)}
-.section-dark p{color:rgba(255,255,255,.7)}
-.section-alt{background:var(--bg2)}
-.section-label{display:inline-block;font-family:var(--fm);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--t);margin-bottom:12px;font-weight:600}
-.section-head{margin-bottom:48px}
-.section-head p{font-size:1.125rem;max-width:700px;margin-top:12px}
-
-/* Cards */
-.card{background:var(--w);border-radius:var(--r3);padding:32px;border:1px solid rgba(0,0,0,.06);transition:all .3s var(--e)}
-.card:hover{transform:translateY(-4px);box-shadow:var(--sh3);border-color:rgba(13,148,136,.15)}
-.card-dark{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)}
-.card-dark:hover{background:rgba(255,255,255,.07);border-color:rgba(13,148,136,.3)}
-.card-icon{width:48px;height:48px;border-radius:var(--r2);background:rgba(13,148,136,.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.card-icon svg{width:24px;height:24px;fill:none;stroke:var(--t);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-
-/* Grid layouts */
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.grid-6{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-
-/* Metrics strip */
-.metrics{display:flex;justify-content:center;gap:48px;padding:32px 0;flex-wrap:wrap}
-.metric{text-align:center}
-.metric-val{font-family:var(--fm);font-size:2rem;font-weight:700;color:var(--t3)}
-.metric-label{font-size:.8rem;color:rgba(255,255,255,.5);margin-top:4px;letter-spacing:.05em}
-
-/* Trust badges */
-.badges{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;padding:24px 0}
-.badge{display:flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r4);font-size:.8rem;color:rgba(255,255,255,.6);font-family:var(--fm)}
-.badge svg{width:16px;height:16px;stroke:var(--t3);fill:none;stroke-width:2}
-
-/* Buttons */
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:var(--r4);font-weight:600;font-size:.9rem;transition:all .3s var(--e);cursor:pointer;border:none;font-family:var(--fb)}
-.btn-primary{background:var(--t);color:var(--w)}
-.btn-primary:hover{background:var(--t2);color:var(--w);transform:translateY(-2px);box-shadow:0 4px 12px rgba(13,148,136,.3)}
-.btn-outline{border:1.5px solid var(--t);color:var(--t);background:transparent}
-.btn-outline:hover{background:var(--t);color:var(--w)}
-.btn-dark{border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);background:transparent}
-.btn-dark:hover{border-color:var(--t3);color:var(--t3)}
-
-/* Tables */
-.tbl-wrap{overflow-x:auto;border-radius:var(--r2);border:1px solid rgba(0,0,0,.08)}
-.tbl{width:100%;border-collapse:collapse;font-size:.85rem}
-.tbl th{background:var(--d1);color:var(--w);padding:12px 16px;text-align:left;font-weight:600;font-family:var(--fb);white-space:nowrap}
-.tbl td{padding:10px 16px;border-bottom:1px solid rgba(0,0,0,.06);vertical-align:top}
-.tbl tr:nth-child(even){background:var(--bg2)}
-.tbl-dark th{background:var(--t)}
-.tbl-dark td{border-color:rgba(255,255,255,.06);color:rgba(255,255,255,.8)}
-.tbl-dark tr:nth-child(even){background:rgba(255,255,255,.03)}
-.tbl .highlight{background:rgba(13,148,136,.06);font-weight:600}
-
-/* Progress bars */
-.progress-wrap{margin-bottom:16px}
-.progress-label{display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:6px}
-.progress-bar{height:8px;background:rgba(0,0,0,.06);border-radius:4px;overflow:hidden}
-.progress-fill{height:100%;background:linear-gradient(90deg,var(--t),var(--t3));border-radius:4px;width:0;transition:width 1.5s var(--e)}
-
-/* Animations */
-.fo{opacity:0;transform:translateY(28px);transition:opacity .7s var(--e),transform .7s var(--e)}
-.fo.vis{opacity:1;transform:translateY(0)}
-.fo-d1{transition-delay:.1s}.fo-d2{transition-delay:.2s}.fo-d3{transition-delay:.3s}.fo-d4{transition-delay:.4s}.fo-d5{transition-delay:.5s}
-
-/* Image containers */
-.img-frame{border-radius:var(--r2);overflow:hidden;border:1px solid rgba(0,0,0,.06);background:var(--bg2)}
-.img-frame img{width:100%;display:block}
-.img-caption{font-size:.75rem;color:var(--txt3);padding:8px 12px;background:var(--bg2);font-family:var(--fm)}
-
-/* Expandable bios */
-.team-card{text-align:center;padding:24px}
-.team-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;margin:0 auto 16px;border:3px solid var(--bg2)}
-.team-name{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--d1)}
-.team-title{font-size:.8rem;color:var(--t);font-weight:600;margin:4px 0 8px}
-.team-bio{font-size:.8rem;color:var(--txt2);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .5s var(--e)}
-.team-card.expanded .team-bio{max-height:300px}
-.team-toggle{font-size:.75rem;color:var(--t);cursor:pointer;margin-top:8px;font-weight:600;border:none;background:none;font-family:var(--fb)}
-
-/* Timeline */
-.timeline{position:relative;padding-left:32px}
-.timeline::before{content:'';position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--t),var(--t3))}
-.tl-item{position:relative;margin-bottom:32px}
-.tl-item::before{content:'';position:absolute;left:-24px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--t);border:3px solid var(--bg)}
-.tl-year{font-family:var(--fm);font-size:.75rem;color:var(--t);font-weight:700;letter-spacing:.1em}
-.tl-title{font-weight:700;margin:4px 0}
-.tl-desc{font-size:.85rem;color:var(--txt2)}
-
-/* Footer */
-.footer{background:var(--d1);color:rgba(255,255,255,.6);padding:60px 0 0}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
-.footer h4{color:var(--w);font-size:.9rem;margin-bottom:16px}
-.footer a{color:rgba(255,255,255,.5);font-size:.85rem}
-.footer a:hover{color:var(--t3)}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:8px}
-.footer-bottom{padding:24px 0;font-size:.75rem;color:rgba(255,255,255,.35);line-height:1.8}
-.footer-legal{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06);font-size:.7rem;line-height:1.8;color:rgba(255,255,255,.25)}
-.footer-logo{height:28px;margin-bottom:16px;opacity:.7}
-
-/* Six Pillars Hex Grid */
-.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto}
-.pillar-card{position:relative;padding:28px 20px;text-align:center;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:var(--r3);transition:all .3s var(--e)}
-.pillar-card:hover{border-color:var(--t3);background:rgba(13,148,136,.05);transform:translateY(-4px)}
-.pillar-icon{width:56px;height:56px;margin:0 auto 12px;border-radius:var(--r2);background:rgba(13,148,136,.1);display:flex;align-items:center;justify-content:center}
-.pillar-icon svg{width:28px;height:28px;stroke:var(--t3);fill:none;stroke-width:1.5}
-.pillar-name{font-family:var(--fm);font-size:.85rem;font-weight:700;color:var(--t3);margin-bottom:4px}
-.pillar-desc{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.5}
-
-/* IHC Gallery */
-.ihc-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.ihc-item{border-radius:var(--r2);overflow:hidden;border:1px solid rgba(0,0,0,.08)}
-.ihc-item img{width:100%;aspect-ratio:1;object-fit:cover}
-.ihc-label{font-size:.7rem;padding:6px 8px;text-align:center;background:var(--bg2);font-family:var(--fm);color:var(--txt2)}
-
-/* Responsive */
-@media(max-width:1024px){
-.nav-links{display:none}.hamburger{display:flex}
-.grid-4{grid-template-columns:repeat(2,1fr)}
-.footer-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:768px){
-.grid-2,.grid-3,.grid-6{grid-template-columns:1fr}
-.pillars-grid{grid-template-columns:repeat(2,1fr)}
-.metrics{gap:24px}
-.hero{padding:120px 0 60px}
-.section{padding:60px 0}
-.footer-grid{grid-template-columns:1fr}
-}
-@media(max-width:480px){
-.pillars-grid{grid-template-columns:1fr}
-.grid-4{grid-template-columns:1fr}
-.metrics{flex-direction:column;gap:16px}
-}
-@media(prefers-reduced-motion:reduce){.fo{opacity:1;transform:none;transition:none}}
-</style>
+<link rel="stylesheet" href="styles.css">
 <noscript><style>.fo{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
 <script>if(sessionStorage.getItem('nova_auth')!=='1'){window.location.href='login.html';}</script>
+
+<!-- Navigation — 5+1 pattern with dropdowns -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
 <div class="nav-inner">
 <a href="home.html"><img id="nav-logo" class="nav-logo" alt="Novascope BioChips" src=""></a>
-<div class="nav-links"><a href="home.html" class="nav-link active">Home</a><a href="about.html" class="nav-link">About</a><a href="technology.html" class="nav-link">Technology</a><a href="pipeline.html" class="nav-link">Pipeline</a><a href="solutions.html" class="nav-link">Solutions</a><a href="investors.html" class="nav-link">Investors</a><a href="news.html" class="nav-link">News</a><a href="partners.html" class="nav-link">Partners</a><a href="contact.html" class="nav-link nav-cta">Contact</a></div>
-<button class="hamburger" aria-label="Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+<div class="nav-links">
+<div class="nav-dropdown">
+<a href="technology.html" class="nav-link">Science <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+<div class="nav-dropdown-menu">
+<a href="technology.html" class="dropdown-item">Technology Platform</a>
+<a href="technology.html#ip" class="dropdown-item">IP &amp; Patents</a>
+</div>
+</div>
+<a href="pipeline.html" class="nav-link">Pipeline</a>
+<a href="solutions.html" class="nav-link">Products</a>
+<div class="nav-dropdown">
+<a href="about.html" class="nav-link">Company <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+<div class="nav-dropdown-menu">
+<a href="about.html" class="dropdown-item">About Us</a>
+<a href="about.html#team" class="dropdown-item">Team</a>
+<a href="partners.html" class="dropdown-item">Partners</a>
+<a href="news.html" class="dropdown-item">News &amp; Events</a>
+</div>
+</div>
+<a href="investors.html" class="nav-link">Investors</a>
+</div>
+<a href="contact.html" class="nav-cta desktop-only">Contact IR</a>
+<button class="hamburger" aria-label="Menu">
 <span></span><span></span><span></span>
 </button>
 </div>
-<div class="mobile-menu"><a href="home.html" class="nav-link active">Home</a><a href="about.html" class="nav-link">About</a><a href="technology.html" class="nav-link">Technology</a><a href="pipeline.html" class="nav-link">Pipeline</a><a href="solutions.html" class="nav-link">Solutions</a><a href="investors.html" class="nav-link">Investors</a><a href="news.html" class="nav-link">News</a><a href="partners.html" class="nav-link">Partners</a><a href="contact.html" class="nav-link">Contact</a></div>
+<div class="mobile-menu">
+<a href="home.html" class="nav-link active">Home</a>
+<span class="mobile-dropdown-title">Science</span>
+<a href="technology.html" class="dropdown-item">Technology Platform</a>
+<a href="technology.html#ip" class="dropdown-item">IP &amp; Patents</a>
+<a href="pipeline.html" class="nav-link">Pipeline</a>
+<a href="solutions.html" class="nav-link">Products</a>
+<span class="mobile-dropdown-title">Company</span>
+<a href="about.html" class="dropdown-item">About Us</a>
+<a href="about.html#team" class="dropdown-item">Team</a>
+<a href="partners.html" class="dropdown-item">Partners</a>
+<a href="news.html" class="dropdown-item">News &amp; Events</a>
+<a href="investors.html" class="nav-link">Investors</a>
+<a href="contact.html" class="nav-link nav-cta">Contact IR</a>
+</div>
 </nav>
 
-<!-- Hero -->
-<section class="hero" style="min-height:100vh;display:flex;align-items:center">
+<!-- ① Hero — dual-color gradient -->
+<section class="hero hero--dual" style="min-height:100vh;display:flex;align-items:center">
 <div class="hero-grid"></div>
 <div class="hero-glow"></div>
 <div class="container" style="position:relative;z-index:1">
 <div class="label fo">The BioSemiconductor Company</div>
-<h1 class="fo fo-d1" style="font-size:clamp(2.5rem,6vw,4.5rem);max-width:800px">Where Silicon<br>Meets <span style="color:var(--t3)">Biology</span></h1>
-<p class="fo fo-d2" style="font-size:1.25rem;max-width:600px;margin:24px 0 40px;color:rgba(255,255,255,.75)">We don&rsquo;t make tests. We make the semiconductor platform that makes tests possible. Powering next-generation diagnostics for sepsis and Alzheimer&rsquo;s disease.</p>
+<h1 class="fo fo-d1" style="font-size:clamp(2.5rem,6vw,4.5rem);max-width:800px">Where <span class="accent-semi">Silicon</span><br>Meets <span class="accent-bio">Biology</span></h1>
+<p class="fo fo-d2" style="font-size:1.25rem;max-width:600px;margin:24px 0 40px;color:rgba(255,255,255,.75)">We don&rsquo;t make tests. We make the semiconductor platform that makes tests possible &mdash; powering next-generation diagnostics for sepsis and Alzheimer&rsquo;s disease.</p>
 <div class="fo fo-d3" style="display:flex;gap:16px;flex-wrap:wrap">
 <a href="technology.html" class="btn btn-primary">Explore the Platform <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
 <a href="investors.html" class="btn btn-dark">Investor Relations</a>
@@ -251,205 +109,74 @@ p{margin-bottom:1rem;color:var(--txt2)}
 </div>
 </section>
 
-<!-- The Thesis -->
-<section class="section">
-<div class="container">
-<div class="grid-2" style="align-items:center;gap:64px">
-<div class="fo">
-<div class="section-label">The Thesis</div>
-<h2>Why Semiconductors Will Transform Diagnostics</h2>
-<p style="margin-top:16px">In 1971, Intel put 2,300 transistors on a single chip and launched the microprocessor revolution. Within three decades, semiconductors transformed computing, communications, and finance. The mechanism was always the same: miniaturize onto silicon, mass-produce in a foundry, and make it cheap enough for the world.</p>
-<p>One of the last great holdouts is medical diagnostics. The $80+ billion IVD industry still runs on the same physics it used forty years ago: optics. A BioFire test costs $150&ndash;$180. A Quanterix SIMOA instrument costs $300,000&ndash;$400,000. These are not tools for primary care clinics.</p>
-<p><strong style="color:var(--d1)">Novascope was founded on a different premise: the right physics for diagnostics is not light &mdash; it is electricity.</strong></p>
-<p>Every biomolecule carries an electric charge. A field-effect transistor detects changes in charge with extraordinary precision. FETs are the most manufactured, most reliable, most scalable objects in human history. We built the complete semiconductor-grade system to turn this principle into a clinical-grade diagnostic platform.</p>
-</div>
-<div class="fo fo-d2">
-<div class="img-frame">
-<img data-img="CHIP_DIES" alt="Novascope biochip dies on semiconductor wafer">
-<div class="img-caption">From 8-inch semiconductor wafer to individual biochip &mdash; each containing billions of probe sensor sites</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Six Pillars Preview -->
-<section class="section section-dark">
-<div class="container">
-<div class="section-head fo" style="text-align:center">
-<div class="section-label" style="color:var(--t3)">Technology Platform</div>
-<h2>Six Pillars of a BioSemiconductor Company</h2>
-<p style="margin:12px auto 0;max-width:600px">A chip that detects charge changes is a physics experiment. A chip that diagnoses disease requires six interlocking capabilities &mdash; each independently difficult, collectively near-impossible to replicate.</p>
-</div>
-
-<div class="pillars-grid fo fo-d1">
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M6 9H3M6 12H3M6 15H3M18 9h3M18 12h3M18 15h3M9 6V3M12 6V3M15 6V3M9 18v3M12 18v3M15 18v3"/></svg></div>
-<div class="pillar-name">NovaCHIP&trade;</div>
-<div class="pillar-desc">ASIC design, UMC foundry partnership, 6 chip generations, zero external IP</div>
-</div>
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="3"/><circle cx="16" cy="12" r="3"/><path d="M11 12h2"/></svg></div>
-<div class="pillar-name">NovaLINK&trade;</div>
-<div class="pillar-desc">Patented surface chemistry, dual-function probes, trade secret antifouling</div>
-</div>
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M8 7c0 0 1 3 4 5s4 5 4 5M16 7c0 0-1 3-4 5s-4 5-4 5"/></svg></div>
-<div class="pillar-name">NovaBIO&trade;</div>
-<div class="pillar-desc">77 antibody clones, ZNA probes, VHH nanobodies, microfluidics buffer</div>
-</div>
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16M9 9v11"/></svg></div>
-<div class="pillar-name">NovaKIT&trade;</div>
-<div class="pillar-desc">Reader + cartridge system, ~200 components, 3 form factors</div>
-</div>
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 4C7 4 4 8 4 12s3 8 8 8 8-4 8-8"/><circle cx="12" cy="12" r="2"/><path d="M12 4c3 0 5 3 5 8"/></svg></div>
-<div class="pillar-name">NovaAI&trade;</div>
-<div class="pillar-desc">Signal intelligence, femtogram sensitivity, binding curve analytics</div>
-</div>
-<div class="pillar-card">
-<div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M7 10h2v4H7zM11 8h2v6h-2zM15 9h2v5h-2z"/></svg></div>
-<div class="pillar-name">NovaCRO&trade;</div>
-<div class="pillar-desc">700+ isolates, 394 species, WGS library, PET-validated AD samples</div>
-</div>
-</div>
-
-<div class="fo fo-d3" style="text-align:center;margin-top:48px">
-<a href="technology.html" class="btn btn-dark">Deep Dive: Technology Platform <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-</div>
-</div>
-</section>
-
-<!-- Clinical Highlights Preview -->
-<section class="section">
-<div class="container">
-<div class="section-head fo" style="text-align:center">
-<div class="section-label">Clinical Evidence</div>
-<h2>Technology De-Risked, Performance Proven</h2>
-</div>
-<div class="grid-3 fo fo-d1">
-<div class="card">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-<div style="width:48px;height:48px;border-radius:50%;background:rgba(239,68,68,.08);display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.5"><path d="M12 4v8l4 4"/><circle cx="12" cy="12" r="9"/></svg></div>
-<h4 style="font-size:1rem">Sepsis Detection</h4>
-</div>
-<p style="font-size:.85rem">98% accuracy* from non-cultured whole blood. LOD: 10&sup2; cfu/mL &mdash; 1,000&times; more sensitive than BioFire. Results in under 60 minutes.</p>
-<p style="font-size:.7rem;color:var(--txt3);margin-top:8px">*Single-center, n=88, IRB-approved at CGMH</p>
-<img data-img="SEPSIS" alt="Sepsis detection chip" style="margin-top:12px;border-radius:var(--r1)">
-</div>
-<div class="card">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-<div style="width:48px;height:48px;border-radius:50%;background:rgba(139,92,246,.08);display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.5"><path d="M12 4C8 4 5 7 5 12s3 8 7 8 7-3 7-8M5 12h14"/><path d="M12 4c2 0 4 3 4 8s-2 8-4 8"/></svg></div>
-<h4 style="font-size:1rem">Alzheimer&rsquo;s Biomarkers</h4>
-</div>
-<p style="font-size:.85rem">NfL correlation R&sup2; = 0.97&ndash;0.99 vs. Quanterix SIMOA gold standard. pTau 217/231 in development. Desktop platform at a fraction of the cost.</p>
-<img data-img="AD" alt="Alzheimer's biomarker detection" style="margin-top:12px;border-radius:var(--r1)">
-</div>
-<div class="card">
-<div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-<div style="width:48px;height:48px;border-radius:50%;background:rgba(13,148,136,.08);display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--t)" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="19" cy="18" r="2"/></svg></div>
-<h4 style="font-size:1rem">Platform Opportunity</h4>
-</div>
-<p style="font-size:.85rem">The chip doesn&rsquo;t care what molecule it detects. Extended sepsis panel (60+ bacteria), oncology liquid biopsy (EGFR 168 mutations), respiratory panel, veterinary diagnostics.</p>
-<p style="font-size:.85rem;margin-top:8px"><strong style="color:var(--d1)">$80B+ IVD market</strong> &bull; <strong style="color:var(--d1)">$25B+</strong> blood culture &bull; <strong style="color:var(--d1)">$8B+</strong> oncology liquid biopsy</p>
-</div>
-</div>
-<div class="fo fo-d3" style="text-align:center;margin-top:40px">
-<a href="pipeline.html" class="btn btn-outline">View Full Pipeline &amp; Clinical Data</a>
-</div>
-</div>
-</section>
-
-<!-- E2E Solutions Preview -->
+<!-- ② Proof Bar — Three headline stats -->
 <section class="section section-alt">
 <div class="container">
-<div class="grid-2" style="align-items:center;gap:48px">
-<div class="fo">
-<div class="section-label">End-to-End</div>
-<h2>Complete Platform Ownership</h2>
-<p>Unlike companies that license instruments, buy reagents, and outsource manufacturing, Novascope owns every layer of the diagnostic stack &mdash; from chip architecture and surface chemistry to assay development, firmware, and clinical validation.</p>
-<p>This end-to-end integration allows us to control performance, quality, and user experience. Zero external silicon IP. Zero royalties. Every dollar of margin stays in the company.</p>
-<div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
-<a href="technology.html" class="btn btn-primary">Technology Deep Dive</a>
-<a href="solutions.html" class="btn btn-outline">Solutions &amp; Products</a>
+<div class="grid-3 fo">
+<div class="stat">
+<div class="stat-value stat-value--semi" style="font-size:3rem">98%*</div>
+<div class="stat-label">Sepsis Detection Accuracy</div>
+<div class="stat-sublabel">n=88, single-center, IRB-approved</div>
 </div>
+<div class="stat">
+<div class="stat-value stat-value--bio" style="font-size:3rem">&lt;60 min</div>
+<div class="stat-label">Sample to Result</div>
+<div class="stat-sublabel">Non-cultured whole blood</div>
 </div>
-<div class="fo fo-d2">
-<div class="img-frame">
-<img data-img="E2E_DIAGRAM" alt="Novascope End-to-End Solutions diagram">
-<div class="img-caption">End-to-End Solutions: Where Biochemistry Meets Semiconductors</div>
+<div class="stat">
+<div class="stat-value stat-value--gold" style="font-size:3rem">~$10</div>
+<div class="stat-label">Target COGS at Scale</div>
+<div class="stat-sublabel">vs. $150&ndash;$180 BioFire</div>
 </div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Why Now -->
-<section class="section section-dark">
-<div class="container">
-<div class="section-head fo" style="text-align:center">
-<div class="section-label" style="color:var(--t3)">Market Catalyst</div>
-<h2>Why Now: Three Converging Forces</h2>
-</div>
-<div class="grid-3 fo fo-d1">
-<div class="card card-dark">
-<div style="font-family:var(--fm);font-size:2rem;font-weight:700;color:#EF4444;margin-bottom:12px">1.27M</div>
-<h4 style="margin-bottom:8px">AMR Crisis</h4>
-<p style="font-size:.85rem">Deaths annually from antimicrobial resistance. $24B US hospital cost. Every hour of delayed treatment increases sepsis mortality by 7.6% (Kumar et al., 2006).</p>
-</div>
-<div class="card card-dark">
-<div style="font-family:var(--fm);font-size:2rem;font-weight:700;color:#8B5CF6;margin-bottom:12px">$26.5K</div>
-<h4 style="margin-bottom:8px">AD Drug Revolution</h4>
-<p style="font-size:.85rem">Annual cost of lecanemab (Leqembi). 6M+ Americans with Alzheimer&rsquo;s need affordable biomarker screening. Current testing: $500&ndash;$1,250/test at reference labs only.</p>
-</div>
-<div class="card card-dark">
-<div style="font-family:var(--fm);font-size:2rem;font-weight:700;color:var(--t3);margin-bottom:12px">~$10</div>
-<h4 style="margin-bottom:8px">Semiconductor Advantage</h4>
-<p style="font-size:.85rem">Target COGS per test at scale. First bio-fabless at UMC. Semiconductor cost curves: every 2&times; production volume, unit cost drops 25&ndash;30%. No optical platform has this advantage.</p>
-</div>
-</div>
-<div class="fo fo-d3" style="text-align:center;margin-top:40px">
-<a href="investors.html" class="btn btn-dark">Full Investment Thesis</a>
 </div>
 </div>
 </section>
 
-<!-- News Preview -->
+<!-- ③ Three Preview Cards — Technology / Pipeline / Solutions -->
 <section class="section">
 <div class="container">
-<div class="section-head fo">
-<div class="section-label">Latest</div>
-<h2>News & Milestones</h2>
+<div class="section-head fo" style="text-align:center">
+<div class="section-label">Platform Overview</div>
+<h2>The Complete BioSemiconductor Stack</h2>
+<p style="margin:12px auto 0;max-width:700px">From chip design and surface chemistry to clinical validation and automated readers &mdash; we own every layer of the diagnostic platform.</p>
 </div>
-<div class="grid-3 fo fo-d1">
-<div class="card">
-<div style="font-family:var(--fm);font-size:.7rem;color:var(--t);letter-spacing:.1em;margin-bottom:8px">DEC 2025</div>
-<h4 style="font-size:1rem;margin-bottom:8px">Healthcare+ Expo Taiwan</h4>
-<p style="font-size:.85rem">Novascope showcased the NVDFlow&trade; automated platform and sepsis detection capabilities at Asia&rsquo;s premier healthcare innovation event.</p>
+
+<div class="grid-3">
+<!-- Technology Card (blue) -->
+<div class="card card--semi fo">
+<div class="card-icon"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M6 9H3M6 12H3M6 15H3M18 9h3M18 12h3M18 15h3M9 6V3M12 6V3M15 6V3M9 18v3M12 18v3M15 18v3"/></svg></div>
+<h3 style="font-size:1.2rem;margin-bottom:12px">The Technology</h3>
+<p style="font-size:.85rem">Six chip generations. Zero external silicon IP. First bio-fabless at UMC. A semiconductor platform that detects biomolecules by their electric charge &mdash; no optics, no fluorescence.</p>
+<p style="font-size:.85rem"><strong style="color:var(--d1)">Sample In &rarr; Data Out</strong></p>
+<a href="technology.html" class="btn btn-semi" style="margin-top:16px;padding:10px 20px;font-size:.85rem">Explore Technology <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
 </div>
-<div class="card">
-<div style="font-family:var(--fm);font-size:.7rem;color:var(--t);letter-spacing:.1em;margin-bottom:8px">2025</div>
-<h4 style="font-size:1rem;margin-bottom:8px">NBRP DEMO DAY &mdash; Top 7 Finalist</h4>
-<p style="font-size:.85rem">Selected as a Top 7 finalist in the medical device category at Taiwan&rsquo;s National Biomedical Research Park DEMO DAY.</p>
+
+<!-- Pipeline Card (teal) -->
+<div class="card card--bio fo fo-d1">
+<div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 4v8l4 4"/><circle cx="12" cy="12" r="9"/></svg></div>
+<h3 style="font-size:1.2rem;margin-bottom:12px">Clinical Pipeline</h3>
+<p style="font-size:.85rem">Sepsis: 98% accuracy from non-cultured blood. Alzheimer&rsquo;s: NfL correlation R&sup2;=0.97&ndash;0.99 vs. Quanterix SIMOA. Extended panels in development.</p>
+<p style="font-size:.85rem"><strong style="color:var(--d1)">$80B+ IVD market opportunity</strong></p>
+<a href="pipeline.html" class="btn btn-primary" style="margin-top:16px;padding:10px 20px;font-size:.85rem">View Pipeline <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
 </div>
-<div class="card">
-<div style="font-family:var(--fm);font-size:.7rem;color:var(--t);letter-spacing:.1em;margin-bottom:8px">2023</div>
-<h4 style="font-size:1rem;margin-bottom:8px">Peer-Reviewed Publication</h4>
-<p style="font-size:.85rem">Ciou et al., <em>Biosensors and Bioelectronics</em> 2023;228:115174. pTau-217 detection via solution-gated FET biosensor. <a href="https://doi.org/10.1016/j.bios.2023.115174" target="_blank" rel="noopener">DOI &rarr;</a></p>
+
+<!-- Solutions Card (purple) -->
+<div class="card card--platform fo fo-d2">
+<div class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16M9 9v11"/></svg></div>
+<h3 style="font-size:1.2rem;margin-bottom:12px">Products &amp; Solutions</h3>
+<p style="font-size:.85rem">NVDFlow&trade; automated reader, NovaKIT&trade; cartridge system, and NovaCRO&trade; services. End-to-end from sample preparation to data output.</p>
+<p style="font-size:.85rem"><strong style="color:var(--d1)">$31 &rarr; $10 COGS at volume</strong></p>
+<a href="solutions.html" class="btn btn-outline" style="margin-top:16px;padding:10px 20px;font-size:.85rem;border-color:var(--platform);color:var(--platform)">See Products <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
 </div>
-</div>
-<div class="fo fo-d2" style="text-align:center;margin-top:32px">
-<a href="news.html" class="btn btn-outline">All News &amp; Publications</a>
 </div>
 </div>
 </section>
 
-<!-- CTA -->
+<!-- ④ Trust Strip + CTA -->
 <section class="section section-dark" style="padding:80px 0;text-align:center">
 <div class="container fo">
 <h2 style="margin-bottom:16px">The Semiconductor Transformation of Diagnostics</h2>
-<p style="max-width:640px;margin:0 auto 32px;font-size:1.1rem">The semiconductor did not improve the telephone &mdash; it replaced it. Novascope has built the platform. Six chip generations. 77 antibody clones. Clinical data matching the gold standard. The technology risk is behind us.</p>
+<p style="max-width:640px;margin:0 auto 32px;font-size:1.1rem">The semiconductor did not improve the telephone &mdash; it replaced it. Novascope has built the platform. Six chip generations. 77 antibody clones. Clinical data matching the gold standard.</p>
 <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
 <a href="contact.html" class="btn btn-primary">Get in Touch</a>
 <a href="investors.html" class="btn btn-dark">Investor Relations</a>
@@ -470,7 +197,7 @@ p{margin-bottom:1rem;color:var(--txt2)}
 <li><a href="about.html">About Us</a></li>
 <li><a href="technology.html">Technology</a></li>
 <li><a href="pipeline.html">Pipeline</a></li>
-<li><a href="solutions.html">Solutions</a></li>
+<li><a href="solutions.html">Products</a></li>
 </ul>
 </div>
 <div>
@@ -526,25 +253,17 @@ p{margin-bottom:1rem;color:var(--txt2)}
 // Image mapping
 (function(){
 var I=window.__IMG||{};
-var maps={
-'nav-logo':I.LOGO_H,'ft-logo':I.LOGO_H
-};
-// Add page-specific mappings from data-img attributes
 document.querySelectorAll('[data-img]').forEach(function(el){
 var key=el.getAttribute('data-img');
 if(I[key])el.src=I[key];
 });
-for(var id in maps){
-var el=document.getElementById(id);
-if(el&&maps[id])el.src=maps[id];
-}
+var maps={'nav-logo':I.LOGO_H,'ft-logo':I.LOGO_H};
+for(var id in maps){var el=document.getElementById(id);if(el&&maps[id])el.src=maps[id];}
 })();
 
 // Scroll animations
 var obs=new IntersectionObserver(function(entries){
-entries.forEach(function(e){
-if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}
-});
+entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
 },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.fo').forEach(function(el){obs.observe(el)});
 
@@ -573,28 +292,6 @@ counterObs.unobserve(e.target);
 });
 },{threshold:0.3});
 document.querySelectorAll('.counter-group').forEach(function(el){counterObs.observe(el)});
-
-// Progress bar animations
-var progObs=new IntersectionObserver(function(entries){
-entries.forEach(function(e){
-if(e.isIntersecting){
-e.target.querySelectorAll('.progress-fill').forEach(function(bar){
-bar.style.width=bar.getAttribute('data-width');
-});
-progObs.unobserve(e.target);
-}
-});
-},{threshold:0.3});
-document.querySelectorAll('.progress-wrap').forEach(function(el){progObs.observe(el)});
-
-// Team bio toggle
-document.querySelectorAll('.team-toggle').forEach(function(btn){
-btn.addEventListener('click',function(){
-var card=this.closest('.team-card');
-card.classList.toggle('expanded');
-this.textContent=card.classList.contains('expanded')?'Show less':'Read more';
-});
-});
 
 // Mobile hamburger
 document.querySelector('.hamburger')&&document.querySelector('.hamburger').addEventListener('click',function(){
